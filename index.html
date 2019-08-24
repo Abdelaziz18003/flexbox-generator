@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Box Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Flex Box Generator</h1>
+  <div id="main">
+    <div id="control">
+      <li>
+        <label>flex-direction</label>
+        <select class="setting" id="flex-direction">
+          <option>row</option>
+          <option>row-reverse</option>
+          <option>column</option>
+          <option>column-reverse</option>
+        </select>
+        <p class="description">direction of content flow</p>
+      </li>
+      <li>
+        <label>flex-wrap</label>
+        <select class="setting" id="flex-wrap">
+          <option>wrap</option>
+          <option>nowrap</option>
+          <option>wrap-reverse</option>
+        </select>
+        <p class="description">controls how wrapping works</p>
+      </li>
+      <li>
+        <label>justify-content</label>
+        <select class="setting" id="justify-content">
+          <option>flex-start</option>
+          <option>flex-end</option>
+          <option>center</option>
+          <option>stretch</option>
+          <option>space-around</option>
+          <option>space-between</option>
+        </select>
+        <p class="description">align along the content flow ( main direction )</p>
+      </li>
+      <li>
+        <label>align-items</label>
+        <select class="setting" id="align-items">
+          <option>flex-start</option>
+          <option>flex-end</option>
+          <option>center</option>
+          <option>stretch</option>
+          <option>space-around</option>
+          <option>space-between</option>
+        </select>
+        <p class="description">vertical align within a line ( cross direction )</p>
+      </li>
+      <li>
+        <label>align-content</label>
+        <select class="setting" id="align-content">
+          <option>flex-start</option>
+          <option>flex-end</option>
+          <option>center</option>
+          <option>stretch</option>
+          <option>space-around</option>
+          <option>space-between</option>
+        </select>
+        <p class="description">vertical align within container</p>
+      </li>
+    </div>
+
+    <div id="view">
+      <div id="flex-container">
+        <div class="flex-item">
+          <p class="number">1</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">2</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">3</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">4</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">5</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">6</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">7</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">8</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">9</p>
+        </div>
+        <div class="flex-item">
+          <p class="number">10</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <h3>Generated Code</h3>
+  <pre id="code-preview"></pre>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
