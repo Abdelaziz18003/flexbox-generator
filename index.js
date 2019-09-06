@@ -21,7 +21,8 @@
       })
 
     document.querySelector('#copy-css-button').addEventListener('click', e => {
-      copyCSS()
+      copyCSS();
+      e.target.innerHTML = 'Copied!';
     })
   }
 
@@ -44,6 +45,7 @@
   align-content: ${alignContent.value};
 }`;
     document.querySelector('#code-preview').innerHTML = code;
+    document.querySelector('#copy-css-button').innerHTML = 'Copy';
   }
 
   function copyCSS () {
