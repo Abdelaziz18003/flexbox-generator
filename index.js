@@ -19,6 +19,10 @@
           generateCode();
         });
       })
+
+    document.querySelector('#copy-css-button').addEventListener('click', e => {
+      copyCSS()
+    })
   }
 
   function applyChanges() {
@@ -33,13 +37,22 @@
     code = `
 .flex-container {
   display: flex;
-  flex-direction: ${flexDirection.value}
+  flex-direction: ${flexDirection.value};
   flex-wrap: ${flexWrap.value};
   justify-content: ${justifyContent.value};
   align-items: ${alignItems.value};
   align-content: ${alignContent.value};
-}
-    `;
+}`;
     document.querySelector('#code-preview').innerHTML = code;
+  }
+
+  function copyCSS () {
+    const cssCode = document.querySelector('#code-preview').innerHTML;
+    const textarea = document.createElement('textarea');
+    textarea.value = cssCode;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
   }
 })();
