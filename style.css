@@ -3,13 +3,15 @@
 }
 
 html, body {
+    margin: 0px;
+    padding: 0px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     text-align: center;
-    margin: 40px;
+    margin: 30px;
 }
 
 #main {
@@ -27,6 +29,7 @@ h1 {
     align-items: center;
     flex-grow: 1;
     background: lightgray;
+    margin: 5px;
 }
 
 #flex-container {
@@ -53,7 +56,7 @@ h1 {
 }
     
 #control {
-    padding: 5px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -64,9 +67,13 @@ h1 {
 #control li {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 4px 0px;
+    margin-top: 5px;
     padding: 5px;
     border: 1px solid lightgray;
+}
+
+#control li:first-child {
+    margin: 0px;
 }
 
 #control li .description {
@@ -76,6 +83,10 @@ h1 {
 
 button {
     cursor: pointer;
+}
+
+.generated-code-section {
+    margin: 5px;
 }
 
 #code-preview {
