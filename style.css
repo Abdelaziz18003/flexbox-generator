@@ -104,3 +104,8 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+footer {
+    padding: 5px 0px 20px;
+    text-align: center;
+}
